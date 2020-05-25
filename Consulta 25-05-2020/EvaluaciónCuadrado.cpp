@@ -37,6 +37,7 @@ main(){
 					printf("\nLa coordenada (%.2f,%.2f) se encuentra en la frontera del cuadrado\n",x,y);
 				}
 		}
+		//Cuarto caso: X o Y están fuera del cuadrado
 		if((x<limite_negativo || x>limite_positivo) || (y<limite_negativo || y>limite_positivo)){
 			printf("\nLa coordenada (%.2f,%.2f) se encuentra fuera del cuadrado\n",x,y);
 		}		
