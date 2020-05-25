@@ -72,4 +72,45 @@ main(){
 }
 ```
 En la siguiente sección se indicará como tomar un valor ingresado por el usuario y almacenarlo en una variable que hayamos definido haciendo uso de `scanf()` y cómo mostrar el mismo haciendo uso de `printf()`
+### Tomar un valor por consola e imprimir el valor almacenado en una variable
+En esta sección hablaremos sobre dos funciones fundamentales de la librería _stio.h_ las cuales son `printf()` y `scanf()`
+#### Printf
+La función `printf()` permite poder mostrar un mensaje de consola por C/C++, el mensaje siempre se encierra dentro de "comillas dobles", como se muestra en el siguiente ejemplo:
+```C++
+#include <stdio.h>
+main(){
+printf("Hola Mundo!!");
+}
+```
+de la misma manera podemos hacer uso de `printf()` para mostrar el valor de una variable, es importante entender que para poder imprimr el valor de una variable se debe __formatear el mensaje___ de modo tal que comprenda que vamos a pasarle una variable. Para entender mejor lo que significa formatear el mensaje dejo a continucación cómo se imprime una variable
+
+```C++
+#include <stdio.h>
+main(){
+int numero_secreto = 365 ;
+printf("El valor del número secreto es de : %d",numero_secreto); 
+}
+```
+Como se puede observar, al mensaje se le agrega una etiqueta `%d` y fuera del mensaje se indica separado por una , cual es la variable a la que se desea mostrar el valor. Esto se debe a que `printf()` para poder mostrar el valor de una variable se debe indicar con una etiqueta de formato el tipo de dato que se va a mostrar en ese lugar y fuera del mensaje y separado por comas las variables que se van a mostrar a continuación. A continuación se deja una tabla con la etiqueta de formateo para imprimir un tipo de variable en particular, es importante recordar estas etiquetas puesto que también son utilizadas por `scanf()`
+|Tipo|Etiqueta de formato|
+| ------------- | ------------- |
+|`int`|`"%d"`|
+|`float`|`"%f"`|
+|`char`|`"%c"`|
+
+A continuación se muestra como hacer la impresión de los distintos tipos de variables en un printf
+```C++
+#include <stdio.h>
+main(){
+int entero  = 2;
+float decimal = 4.5;
+char caracter = 'c';
+//puedo imprimir las variables separadas 
+printf("valor entero : %d",entero);
+printf("valor decimal : %f",decimal);
+printf("letra impresa : %c",caracter);
+// o puedo imprimrlas juntas
+printf("los valores de las tres variables son: %d , %f , %c",entero,decimal,caracter);
+}
+```
 
