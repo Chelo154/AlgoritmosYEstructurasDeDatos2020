@@ -113,4 +113,10 @@ main(){
   printf("los valores de las tres variables son: %d , %f , %c",entero,decimal,caracter);
 }
 ```
+#### Scanf
+
+## Estructuras repetivas
+### While
+### For
+### Do while
 
