@@ -47,7 +47,8 @@ main(){
 	printf("\n Cantidad de socios del sexo masculino: %d",cantidad_masculinos);
 	printf("\n Cantidad de socios del sexo femenino: %d",cantidad_femeninos);
 	printf("\n Cantidad de socios menores de 16 : %d",cantidad_masculinos);
-	
+	getchar();
+	getchar();
 	
 	
 }

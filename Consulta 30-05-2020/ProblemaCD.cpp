@@ -6,6 +6,8 @@ información almacenada en un disco rígido, cuya capacidad se conoce. Considerar 
 un disco duro está lleno de información, además expresado en gigabyte. Un CD virgen
 tiene 700 Megabytes de capacidad y un Gigabyte es igual a 1.024 megabyte.
 */
+//snake_case: C/C++ Python
+// variables descriptivas
 main(){
 	int cantidad_cd;
 	float valor_cd_decimal;// Cantidad decimal de Cd's que necesito
@@ -13,7 +15,7 @@ main(){
 	float capacidad_disco_mb; // Capacidad del disco expresado en Megabytes
 	const float capacidad_cd = 700; //Tamaño de un cd en Megabytes
 	const float valor_gb_mb = 1024; //Valor de 1 Gb en Megabytes
-	printf("Ingrese la capacidad de su disco en Gb: ");
+	printf("Ingrese la capacidad de su disco en Gb: ");	
 	scanf("%f",&capacidad_disco_gb);
 	capacidad_disco_mb = capacidad_disco_gb * valor_gb_mb;
 	valor_cd_decimal = capacidad_disco_mb / capacidad_cd;	
@@ -27,6 +29,5 @@ main(){
 	printf("\nCapacidad del disco expresado en Mb: %.2f Mb",capacidad_disco_mb);
 	printf("\nCantidad necesaria de cds : %d ",cantidad_cd);
 	getchar();
-	getchar();
-	
+	getchar();	
 }
