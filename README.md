@@ -113,4 +113,63 @@ main(){
   printf("los valores de las tres variables son: %d , %f , %c",entero,decimal,caracter);
 }
 ```
+#### Scanf
+La función `scanf()` nos permitirá tomar un valor del teclado y asignarlo a una variable, es una función muy util a la hora de pedirle al usuario ingresar un valor, la sintaxis de la misma es la siguiente:
+
+`scanf("etiqueta_de_formato",&nombre_de_la_variable)`.
+
+Cabe recalcar la importancia de `&nombre_de_la_variable` dado que esto es lo que nos permite almacenar el valor ingresado en la variable indicada. El símbolo `&`  __siempre__ debe ser colocado a la par del nombre de  la variable dado que el `&` indica que se debe almacenar lo ingresado por el usuario en la __dirección de memoria__ donde se aloja nuestra variable. De lo contrario el programa puede fallar en su ejecución dado que este error no es detectado por el compilador. Las etiquetas de formato que `scanf()` puede tomar son las definidas en la tabla de etiquetas de formato de la sección __printf__
+A continunación se muestra el uso de scanf para hacer una suma simple de dos variables
+```C++
+#include <stdio.h>
+main(){
+  int a,b,c;
+  printf("Ingrese a : ");
+  scanf("%d",&a); // Indico que el valor a recibir es un entero a través de la etiqueta de formato y lo guardo en la variable a
+  printf("Ingrese b : ");
+  scanf("%d",&b);
+  c = a+b;
+  printf("Resultado: %d",c); // Para el printf no se debe poner el &, solamente para el scanf
+  getchar();
+  getchar();
+}
+```
+Además `scanf()` puede ser utilizado para pedir un grupo de variables al mismo tiempo:
+```C++
+#include<stdio.h>
+main(){
+  int a;
+  float b;
+  char c;
+  scanf("%d %f %c",&a,&b,&c);//En un mismo scanf puedo pedir más de una variable
+  printf("Los valores ingresados son: %d para entero, %f para decimal, %c para caracter",a,b,c);
+  getchar();
+  getchar();
+
+}
+```
+En el ejemplo anterior se puede ver como `scanf()` puede tomar más de una variable al mismo tiempo, por lo que la entrada del usuario se vería de la siguiente manera
+```
+2 4.5 c
+```
+Y la salida sería
+```
+Los valores ingresados son: 2 para entero, 4.500000000 para decimal y c para caracter
+```
+### Algunos consejos sobre declaración de variables
+A continuación se presenta una buena práctica para definir las variables en C/C++
+- __Respetar una convención para la declaración de variables:__ es importante para una mejor comprensión del código en C/C++ respetar una única convención de declaración de variables. A continación se propone la convención más tradicional de declaración de variables para C/C++ denominada `snake_case`. La característica de snake_case radica en que todas las palabras llevan minúscula y cuando se desea diferenciar dos palabras distintas se las separa por un guión bajo `_`
+- __Definir variables descriptivas:__ Es una buena práctica definir variables descriptivas para una mejor comprensión del código. Las variables descriptivas se caracterizan porque en su nombre describen el contenido que almacenarán las mismas. A continuación se deja un ejemplo de variables descriptivas
+```C++
+#include<stdio.h>
+main(){
+  int cantidad_total_de_ventas; // Esto es una variable descriptiva en snake_case
+  int ctv; // Esto no es una variable descriptiva
+}
+```
+La idea principal de definir variables descriptivas es poder tener una comprensión más rapida del código cuando una persona deba verificarlo o cuando se deba acceder a el después de un tiempo prolongado en el que no fue consultado
+## Estructuras repetivas
+### While
+### For
+### Do while
 
