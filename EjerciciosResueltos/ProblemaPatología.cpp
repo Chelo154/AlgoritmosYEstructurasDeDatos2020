@@ -36,7 +36,8 @@ main()
     }
     printf("%d",b);
     printf("\n %d",d);
-    c = (float)(b/d)*100;
+    c = (float)(b*100)/d;
+    printf("\n%f",c);
     	
     printf("\nLa cantidad de personas de sexo masculino que padecen Gripe A= %d",a);
     printf("\nEl porcentaje de personas del sexo femenino= %f ",c);

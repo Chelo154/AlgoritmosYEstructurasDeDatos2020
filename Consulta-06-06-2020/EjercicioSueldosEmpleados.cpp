@@ -30,8 +30,7 @@ main(){
 
 //Funcion sin tipo
 void calcular_sueldo(int cantidad_horas_trabajadas,float precio_hora, float &sueldo_calculado){
-	//declaración de variables
-	
+	//declaración de variables	
 	const float descuento_jubilacion = 11;
 	const float descuento_obra_social = 3;
 	const float premio_horas_trabajadas = 5;
