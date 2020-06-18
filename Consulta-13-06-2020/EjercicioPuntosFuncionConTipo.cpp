@@ -6,12 +6,10 @@ main()
 {
 	int cantidad_puntos;
 	float x,y;
-
 	
 	printf("Indique la cantidad de puntos a ingresar: ");
 	scanf("%d",&cantidad_puntos);
-	
-	
+		
 	for(int i = 0 ; i < cantidad_puntos; i++)
 	{
 		printf("\n\nIngrese el valor de la coordenada x : ");
@@ -27,13 +25,9 @@ main()
 		else
 		{
 			printf("\nEl punto (%.2f,%.2f) se encuentra fuera del cuadrado ",x,y);
-		}
+		}		
 		
-		
-		
-	}
-	
-	
+	}	
 	
 }
 

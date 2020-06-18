@@ -61,5 +61,5 @@ float calcular_porcentaje_envases_desechados(int cantidad_envases_producidos, in
 	
 	
 	return porcentaje_envases_desechados; // Devuelve el valor 
-	printf("HOLA ME LLAMO MARCELO PERO ME DICEN CHELO");
+	
 }
