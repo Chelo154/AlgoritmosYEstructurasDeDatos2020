@@ -11,6 +11,7 @@ main(){
 	
 	printf("Ingrese el numero 1: ");
 	scanf("%d",&numero_1);
+	
 	printf("Ingrese el numero 2: ");
 	scanf("%d",&numero_2);
 	
