@@ -18,6 +18,6 @@ main(){
 int calcular_serie_fibonacci(int numero){
 	//Condicion de retorno
 	if(numero == 0) return 0;
-	//if(numero == 1) return 1;
+	if(numero == 1) return 1;
 	return calcular_serie_fibonacci(numero-1) + calcular_serie_fibonacci(numero-2);
 }
