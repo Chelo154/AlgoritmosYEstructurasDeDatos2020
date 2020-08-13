@@ -15,7 +15,7 @@ main()
 	resultado = dividir(numero_1,numero_2);
 	
 	printf("El resultado es: %d",resultado);
-		
+	printf("\n");
 }
 int dividir(int dividendo,int divisor)
 {
